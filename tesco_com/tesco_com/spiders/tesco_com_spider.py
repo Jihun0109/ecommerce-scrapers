@@ -37,7 +37,7 @@ class tesco_com_spiderSpider(scrapy.Spider):
     def start_requests(self):
         for url in self.start_urls:
             link = "https://www.tesco.com/groceries/en-GB/shop" + url
-            yield Request(link, self.parse_categories, meta={"categories":link})
+            yield Request(link, self.parse_categories, meta={"categories":url})
 
     
 ###########################################################

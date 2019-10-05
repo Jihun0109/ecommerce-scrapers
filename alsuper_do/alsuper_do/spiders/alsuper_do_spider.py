@@ -37,7 +37,7 @@ class alsuper_do_spiderSpider(scrapy.Spider):
     def start_requests(self):
         for url in self.start_urls:
             link = "https://alsuper.do" + url
-            yield Request(link, self.parse_categories, meta={"categories":link})
+            yield Request(link, self.parse_categories, meta={"categories":url})
 
 ###########################################################
     def parse_categories(self, response):
