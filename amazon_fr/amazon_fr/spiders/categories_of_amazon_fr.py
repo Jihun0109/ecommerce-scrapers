@@ -1,5 +1,6 @@
 import scrapy, json
 from urlparse import urlparse
+from scrapy import Request
 
 class CategoriesOfamazon_fr(scrapy.Spider):
 
@@ -12,6 +13,11 @@ class CategoriesOfamazon_fr(scrapy.Spider):
 		"CONCURRENT_REQUESTS_PER_IP":1,
 		"DOWNLOAD_DELAY":5
 	}
+
+	headers = {
+                'upgrade-insecure-requests': '1',
+                'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36'
+            }
 
 	use_selenium = False
 	def parse(self, response):
@@ -37,4 +43,28 @@ class CategoriesOfamazon_fr(scrapy.Spider):
 				link = cate.xpath('./@href').extract_first()
 				links.append(link)
 
-		yield {'links':list(x for x in links)}
+		for link in links:
+			print response.urljoin(link)
+
+			yield Request(
+                    response.urljoin(link),
+                    self.parse_categories,
+                    headers=self.headers
+                )
+
+	def parse_categories(self, response):
+		
+		categories = response.xpath('//img[contains(@class, "octopus")][contains(@class, "category")]/ancestor::a[1]/@href').extract()
+		if categories:
+			for cate in categories:
+				url = response.urljoin(cate)
+				yield Request(
+					url,
+					self.parse_categories,
+					headers=self.headers
+				)
+
+		else:
+			yield {'links': response.url}
+		#products = response.xpath('//img[contains(@class, "-image")][contains(@class, "s")][not(contains(@class, "flyout"))][not(contains(@class, "dynamic"))][not(contains(@class, "octopus"))]/ancestor::a[1]/@href').extract()
+		
