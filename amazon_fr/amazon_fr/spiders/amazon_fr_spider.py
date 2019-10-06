@@ -51,7 +51,7 @@ class amazon_fr_spiderSpider(scrapy.Spider):
         products = response.xpath('//img[contains(@class, "-image")][contains(@class, "s")][not(contains(@class, "flyout"))][not(contains(@class, "dynamic"))][not(contains(@class, "octopus"))]/ancestor::a[1]/@href').extract()
         print len(products)
         for product in products:
-            product = "https://www.amazon.fr/MOTIP-BOMBE-PEINTURE-HAUTE-TEMPERATURE/dp/B00JF8XE4M"
+            #product = "https://www.amazon.fr/MOTIP-BOMBE-PEINTURE-HAUTE-TEMPERATURE/dp/B00JF8XE4M"
             yield Request(
                 response.urljoin(product),
                 self.parse_product,
@@ -59,15 +59,13 @@ class amazon_fr_spiderSpider(scrapy.Spider):
                 headers=self.headers
             )
 
-            break
-
         next_link = response.xpath('//*[@class="a-last"]/a/@href').extract()
         if len(next_link) == 0:
             next_link = response.xpath('//*[@class="pagnRA"]/a/@href').extract()
 
         # Pagination
-        #if next_link:
-        if False:
+        if next_link:
+        #if False:
             print next_link[0].split("_")[-1]
 
             yield Request(
@@ -88,7 +86,7 @@ class amazon_fr_spiderSpider(scrapy.Spider):
             comments = "0"
         asin = response.xpath('//*[@id="desktop_buybox"]//form//input[@name="ASIN"]/@value').extract_first()
         browse_node_id = response.xpath('//*[@id="desktop_buybox"]//form//input[@name="nodeID"]/@value').extract_first()
-        brand = response.xpath('//*[@id="mbc"]/@data-brand').extract_first()
+        brand = response.xpath('//*[@id="bylineInfo"]/text()').extract_first()
         breadcrumb = response.xpath('//a[@class="a-link-normal a-color-tertiary"]/text()').extract()
         descriptions = response.xpath('//*[@id="feature-bullets"]//li[not(@id)]//text()').extract()
         
@@ -98,11 +96,13 @@ class amazon_fr_spiderSpider(scrapy.Spider):
         descs = response.xpath('//h2[contains(text(), "Informations sur")]/following-sibling::div[1]/div[1]//table//tr')
         descs = response.xpath('//*[text()="Descriptif technique"]/ancestor::div[1]/following-sibling::div[1]//table//tr')
         features = []
-        price = ''.join(response.xpath('//*[@id="desktop_buybox"]//*[contains(@class, "a-color-price")][1]').re("[\d.,]+")).replace(",",".")
+        prices = response.xpath('//*[@id="desktop_buybox"]//*[contains(@class, "a-color-price")][1]').re("[\d.,]+")
 
-        if not price:
+        if not prices:
             return
 
+        price = prices[0].replace(',','.')
+        
         weight = ""
         l = ""
         w = ""
