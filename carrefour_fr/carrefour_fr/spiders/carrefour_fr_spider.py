@@ -50,7 +50,10 @@ class carrefour_fr_spiderSpider(scrapy.Spider):
             item['Vendedor'] = 550
             item['ID'] = product.xpath('.//*[@class="add-to-shoppinglist"]/@ean').extract_first()
             item['Title'] = product.xpath('.//*[@class="ds-product-card--vertical-text"]/a/@title').extract_first()
-            item['Price'] = ''.join(product.xpath('.//*[@class="product-card-price__price"]//text()').re(r'[\d.,]+')).replace(',','.')
+            price = product.xpath('.//*[@class="product-card-price__price"]//text()').re(r'[\d.,]+')
+            if not price:
+                continue
+            item['Price'] = price[0].replace(',','.')
             item['Currency'] = 'EURO'
             item['Category URL'] = response.meta["categories"]
             item['Details URL'] = "https://www.carrefour.fr" + product.xpath('.//*[@class="ds-product-card--vertical-text"]/a/@href').extract_first()

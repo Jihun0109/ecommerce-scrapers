@@ -69,7 +69,7 @@ class mad_coop_dk_spiderSpider(scrapy.Spider):
                     item['Vendedor'] = 547
                     item['ID'] = product['productId']
                     item['Title'] = product['displayName']
-                    item['Price'] = product['salesPrice']['major'] + "." + product['salesPrice']['minor']
+                    item['Price'] = product['salesPrice']['major'].replace(".","") + "." + product['salesPrice']['minor']
                     item['Currency'] = product['salesPrice']['isoCurrencySymbol']
                     item['Category URL'] = response.meta["categories"]
                     item['Details URL'] = "https://mad.coop.dk" + product['productUrl']
