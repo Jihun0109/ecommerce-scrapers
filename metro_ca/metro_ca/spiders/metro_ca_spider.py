@@ -9,6 +9,7 @@ from datetime import date
 from collections import OrderedDict
 
 import re, json, time, datetime
+from scrapy.utils.response import open_in_browser
 
 class metro_ca_spiderSpider(scrapy.Spider):
 
@@ -22,6 +23,11 @@ class metro_ca_spiderSpider(scrapy.Spider):
     def __init__(self, categories=None, *args, **kwargs):
         super(metro_ca_spiderSpider, self).__init__(*args, **kwargs)
 
+        # f = open("categories_of_metro_ca.csv", 'r')
+        # data = f.read()
+        # f.close()
+        # links = data.strip("\n").strip().split(',')
+        # self.start_urls = [l.split("\"")[-1].strip("\"").strip() for l in links]
         if not categories:
             raise CloseSpider('Received no categories!')
         else:
@@ -36,28 +42,31 @@ class metro_ca_spiderSpider(scrapy.Spider):
 
     def start_requests(self):
         for url in self.start_urls:
-            yield Request(url, self.parse_categories, meta={"categories":url})
+            yield Request("https://www.metro.ca"+url, self.parse_categories, meta={"categories":url})
+            
 
 ###########################################################
     def parse_categories(self, response):
-        products = response.xpath('//*[@class="category-products"]/ul/li')
+        
+        products = response.xpath('//*[@class="product-tile item-addToCart"]')
         print len(products)
         for product in products:
             item = OrderedDict()
             item['Vendedor'] = 546
-            item['ID'] = product.xpath('./div/span/@id').re(r'\d+')[0]
-            item['Title'] = product.xpath('./a/@title').extract_first()
-            item['Price'] = ''.join(product.xpath('./div/span/span/text()').extract_first()).replace("$","")
+            item['ID'] = product.xpath('./@data-product-code').extract_first()
+            item['Title'] = product.xpath('./@data-product-name').extract_first()
+            item['Price'] = ''.join(product.xpath('.//*[contains(@class,"pi--price price-update")][1]/text()').re(r'[\d,.]+'))
             item['Currency'] = 'USD'
             item['Category URL'] = response.meta["categories"]
-            item['Details URL'] = product.xpath('./a/@href').extract_first()
+            item['Details URL'] = response.urljoin(product.xpath('.//*[@class="pt--image product-details-link"]/@href').extract_first())
             item['partner-name'] = "Metro"
             item['Date'] = date.today()
             item['timestamp'] = datetime.datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d %H:%M:%S')
-            item['image_url'] = product.xpath('./a/img/@src').extract_first()
+            image = product.xpath('.//*[@class="pt--image product-details-link"]/picture/img/@srcset').extract_first()
+            item['image_url'] = image.split(', ')[-1].split()[0] if image else ""
             
             yield item
 
-        next_url = response.xpath('//*[@class="next i-next"]/@href').extract_first()
+        next_url = response.xpath('//*[@aria-label="Next"]/@href').extract_first()
         if next_url:
             yield Request(response.urljoin(next_url), self.parse_categories, meta={"categories":response.meta["categories"]})
