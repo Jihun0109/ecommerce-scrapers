@@ -1,0 +1,66 @@
+Vendedor,ID,Title,Price,Currency,Category URL,Details URL,partner-name,Date,timestamp,image_url,breadcumb
+600,160570379,Combo croissant con bacon,120.0,ARS,Bue/burger-king-desayunos-buenos-aires/600/Burger*King*Desayunos*/SNACKS_LATAM/45234/88759,,Glovo,2019-10-13,2019-10-13 05:55:33,,TOP VENTAS
+600,160570378,Combo croissant,115.0,ARS,Bue/burger-king-desayunos-buenos-aires/600/Burger*King*Desayunos*/SNACKS_LATAM/45234/88759,,Glovo,2019-10-13,2019-10-13 05:55:34,,TOP VENTAS
+600,160570373,Combo 3 facturas,115.0,ARS,Bue/burger-king-desayunos-buenos-aires/600/Burger*King*Desayunos*/SNACKS_LATAM/45234/88759,,Glovo,2019-10-13,2019-10-13 05:55:34,,Desayunos BK
+600,160570375,Combo tostado de jamón y queso,90.0,ARS,Bue/burger-king-desayunos-buenos-aires/600/Burger*King*Desayunos*/SNACKS_LATAM/45234/88759,,Glovo,2019-10-13,2019-10-13 05:55:34,,Desayunos BK
+600,160570376,Combo muffin chips chocolate,100.0,ARS,Bue/burger-king-desayunos-buenos-aires/600/Burger*King*Desayunos*/SNACKS_LATAM/45234/88759,,Glovo,2019-10-13,2019-10-13 05:55:34,,Desayunos BK
+600,160570378,Combo croissant,115.0,ARS,Bue/burger-king-desayunos-buenos-aires/600/Burger*King*Desayunos*/SNACKS_LATAM/45234/88759,,Glovo,2019-10-13,2019-10-13 05:55:34,,Desayunos BK
+600,160570379,Combo croissant con bacon,120.0,ARS,Bue/burger-king-desayunos-buenos-aires/600/Burger*King*Desayunos*/SNACKS_LATAM/45234/88759,,Glovo,2019-10-13,2019-10-13 05:55:34,,Desayunos BK
+600,160570381,Combo muffin de dulce de leche,100.0,ARS,Bue/burger-king-desayunos-buenos-aires/600/Burger*King*Desayunos*/SNACKS_LATAM/45234/88759,,Glovo,2019-10-13,2019-10-13 05:55:34,,Desayunos BK
+Vendedor,ID,Title,Price,Currency,Category URL,Details URL,partner-name,Date,timestamp,image_url,breadcumb
+600,160570379,Combo croissant con bacon,120.0,ARS,Bue/burger-king-desayunos-buenos-aires/600/Burger*King*Desayunos*/SNACKS_LATAM/45234/88759,"https://res.cloudinary.com/glovoapp/w_340,h_170,c_fit,f_auto,q_auto/Products/z3tmzul4aoudg36g8wjt",Glovo,2019-10-13,2019-10-13 06:00:32,"https://res.cloudinary.com/glovoapp/w_340,h_170,c_fit,f_auto,q_auto/Products/z3tmzul4aoudg36g8wjt",TOP VENTAS
+600,160570378,Combo croissant,115.0,ARS,Bue/burger-king-desayunos-buenos-aires/600/Burger*King*Desayunos*/SNACKS_LATAM/45234/88759,"https://res.cloudinary.com/glovoapp/w_340,h_170,c_fit,f_auto,q_auto/Products/wsdrakhidtyi9dzpqve6",Glovo,2019-10-13,2019-10-13 06:00:32,"https://res.cloudinary.com/glovoapp/w_340,h_170,c_fit,f_auto,q_auto/Products/wsdrakhidtyi9dzpqve6",TOP VENTAS
+600,160570373,Combo 3 facturas,115.0,ARS,Bue/burger-king-desayunos-buenos-aires/600/Burger*King*Desayunos*/SNACKS_LATAM/45234/88759,"https://res.cloudinary.com/glovoapp/w_340,h_170,c_fit,f_auto,q_auto/Products/jcf8jp54dsnbrscbkir9",Glovo,2019-10-13,2019-10-13 06:00:32,"https://res.cloudinary.com/glovoapp/w_340,h_170,c_fit,f_auto,q_auto/Products/jcf8jp54dsnbrscbkir9",Desayunos BK
+600,160570375,Combo tostado de jamón y queso,90.0,ARS,Bue/burger-king-desayunos-buenos-aires/600/Burger*King*Desayunos*/SNACKS_LATAM/45234/88759,"https://res.cloudinary.com/glovoapp/w_340,h_170,c_fit,f_auto,q_auto/Products/vqqzkyyciswrg0nxwbgc",Glovo,2019-10-13,2019-10-13 06:00:32,"https://res.cloudinary.com/glovoapp/w_340,h_170,c_fit,f_auto,q_auto/Products/vqqzkyyciswrg0nxwbgc",Desayunos BK
+600,160570376,Combo muffin chips chocolate,100.0,ARS,Bue/burger-king-desayunos-buenos-aires/600/Burger*King*Desayunos*/SNACKS_LATAM/45234/88759,"https://res.cloudinary.com/glovoapp/w_340,h_170,c_fit,f_auto,q_auto/Products/drpotvqbs8360r3k3oa5",Glovo,2019-10-13,2019-10-13 06:00:32,"https://res.cloudinary.com/glovoapp/w_340,h_170,c_fit,f_auto,q_auto/Products/drpotvqbs8360r3k3oa5",Desayunos BK
+600,160570378,Combo croissant,115.0,ARS,Bue/burger-king-desayunos-buenos-aires/600/Burger*King*Desayunos*/SNACKS_LATAM/45234/88759,"https://res.cloudinary.com/glovoapp/w_340,h_170,c_fit,f_auto,q_auto/Products/wsdrakhidtyi9dzpqve6",Glovo,2019-10-13,2019-10-13 06:00:32,"https://res.cloudinary.com/glovoapp/w_340,h_170,c_fit,f_auto,q_auto/Products/wsdrakhidtyi9dzpqve6",Desayunos BK
+600,160570379,Combo croissant con bacon,120.0,ARS,Bue/burger-king-desayunos-buenos-aires/600/Burger*King*Desayunos*/SNACKS_LATAM/45234/88759,"https://res.cloudinary.com/glovoapp/w_340,h_170,c_fit,f_auto,q_auto/Products/z3tmzul4aoudg36g8wjt",Glovo,2019-10-13,2019-10-13 06:00:32,"https://res.cloudinary.com/glovoapp/w_340,h_170,c_fit,f_auto,q_auto/Products/z3tmzul4aoudg36g8wjt",Desayunos BK
+600,160570381,Combo muffin de dulce de leche,100.0,ARS,Bue/burger-king-desayunos-buenos-aires/600/Burger*King*Desayunos*/SNACKS_LATAM/45234/88759,"https://res.cloudinary.com/glovoapp/w_340,h_170,c_fit,f_auto,q_auto/Products/od4rh3qfan47fh3r9lgm",Glovo,2019-10-13,2019-10-13 06:00:32,"https://res.cloudinary.com/glovoapp/w_340,h_170,c_fit,f_auto,q_auto/Products/od4rh3qfan47fh3r9lgm",Desayunos BK
+Vendedor,ID,Title,Price,Currency,Category URL,Details URL,partner-name,Date,timestamp,image_url,breadcumb
+600,12235706,Shawarma clásico,230.0,ARS,Bue/tarabish/600/Tarabish/RESTAURANT/19521/34925,,Glovo,2019-10-13,2019-10-13 06:05:53,,TOP VENTAS
+600,12235804,Shawarma Mediterráneo,260.0,ARS,Bue/tarabish/600/Tarabish/RESTAURANT/19521/34925,,Glovo,2019-10-13,2019-10-13 06:05:53,,TOP VENTAS
+600,5066337,Shawarma al plato ,360.0,ARS,Bue/tarabish/600/Tarabish/RESTAURANT/19521/34925,,Glovo,2019-10-13,2019-10-13 06:05:53,,TOP VENTAS
+600,5066989,"Combo Buenos Aires, 2 fatay +  bebida o cerveza artesanal ",195.0,ARS,Bue/tarabish/600/Tarabish/RESTAURANT/19521/34925,,Glovo,2019-10-13,2019-10-13 06:05:53,,Combos sugeridos de Tarabish
+600,5066979,"Combo Armenia, falafel, papas rústicas, bebida",320.0,ARS,Bue/tarabish/600/Tarabish/RESTAURANT/19521/34925,,Glovo,2019-10-13,2019-10-13 06:05:53,,Combos sugeridos de Tarabish
+600,5066352,Combo Beirut shawarma clásico + papas rústicas + bebida,350.0,ARS,Bue/tarabish/600/Tarabish/RESTAURANT/19521/34925,,Glovo,2019-10-13,2019-10-13 06:05:53,,Combos sugeridos de Tarabish
+600,12235706,Shawarma clásico,230.0,ARS,Bue/tarabish/600/Tarabish/RESTAURANT/19521/34925,,Glovo,2019-10-13,2019-10-13 06:05:53,,Shawarmas especiales
+600,24237516,Shawarma trípoli,240.0,ARS,Bue/tarabish/600/Tarabish/RESTAURANT/19521/34925,,Glovo,2019-10-13,2019-10-13 06:05:53,,Shawarmas especiales
+600,12235816,Shawarma Tarabish,250.0,ARS,Bue/tarabish/600/Tarabish/RESTAURANT/19521/34925,,Glovo,2019-10-13,2019-10-13 06:05:53,,Shawarmas especiales
+600,12235800,Shawarma Palermitano,250.0,ARS,Bue/tarabish/600/Tarabish/RESTAURANT/19521/34925,,Glovo,2019-10-13,2019-10-13 06:05:53,,Shawarmas especiales
+600,12235804,Shawarma Mediterráneo,260.0,ARS,Bue/tarabish/600/Tarabish/RESTAURANT/19521/34925,,Glovo,2019-10-13,2019-10-13 06:05:53,,Shawarmas especiales
+600,12235806,Shawarma oriental,250.0,ARS,Bue/tarabish/600/Tarabish/RESTAURANT/19521/34925,,Glovo,2019-10-13,2019-10-13 06:05:53,,Shawarmas especiales
+600,24237764,Shawarma Beirut,260.0,ARS,Bue/tarabish/600/Tarabish/RESTAURANT/19521/34925,,Glovo,2019-10-13,2019-10-13 06:05:53,,Shawarmas especiales
+600,24237780,Shawarma Líbano,260.0,ARS,Bue/tarabish/600/Tarabish/RESTAURANT/19521/34925,,Glovo,2019-10-13,2019-10-13 06:05:53,,Shawarmas especiales
+600,5066203,Soyuk ,75.0,ARS,Bue/tarabish/600/Tarabish/RESTAURANT/19521/34925,,Glovo,2019-10-13,2019-10-13 06:05:53,,Fataier 
+600,5066181,Fataier de carne ,70.0,ARS,Bue/tarabish/600/Tarabish/RESTAURANT/19521/34925,,Glovo,2019-10-13,2019-10-13 06:05:53,,Fataier 
+600,5066185,Fataier de pollo ,70.0,ARS,Bue/tarabish/600/Tarabish/RESTAURANT/19521/34925,,Glovo,2019-10-13,2019-10-13 06:05:53,,Fataier 
+600,5066189,Fataier de queso ,70.0,ARS,Bue/tarabish/600/Tarabish/RESTAURANT/19521/34925,,Glovo,2019-10-13,2019-10-13 06:05:53,,Fataier 
+600,5066191,Fataier de verdura ,70.0,ARS,Bue/tarabish/600/Tarabish/RESTAURANT/19521/34925,,Glovo,2019-10-13,2019-10-13 06:05:53,,Fataier 
+600,24252987,Sfiha abierta de carne,70.0,ARS,Bue/tarabish/600/Tarabish/RESTAURANT/19521/34925,,Glovo,2019-10-13,2019-10-13 06:05:53,,Fataier 
+600,5066208,Warak enab (uds.),145.0,ARS,Bue/tarabish/600/Tarabish/RESTAURANT/19521/34925,,Glovo,2019-10-13,2019-10-13 06:05:53,,Platos libaneses 
+600,5066212,Hummus XL (2 personas),160.0,ARS,Bue/tarabish/600/Tarabish/RESTAURANT/19521/34925,,Glovo,2019-10-13,2019-10-13 06:05:53,,Platos libaneses 
+600,5066219,Mutabal,160.0,ARS,Bue/tarabish/600/Tarabish/RESTAURANT/19521/34925,,Glovo,2019-10-13,2019-10-13 06:05:53,,Platos libaneses 
+600,5066315,Babaghanush ,160.0,ARS,Bue/tarabish/600/Tarabish/RESTAURANT/19521/34925,,Glovo,2019-10-13,2019-10-13 06:05:53,,Platos libaneses 
+600,24254256,Crema de remolacha (para 2 personas),150.0,ARS,Bue/tarabish/600/Tarabish/RESTAURANT/19521/34925,,Glovo,2019-10-13,2019-10-13 06:05:53,,Platos libaneses 
+600,5066331,Falafel al plato ,320.0,ARS,Bue/tarabish/600/Tarabish/RESTAURANT/19521/34925,,Glovo,2019-10-13,2019-10-13 06:05:53,,Platos calientes
+600,5066337,Shawarma al plato ,360.0,ARS,Bue/tarabish/600/Tarabish/RESTAURANT/19521/34925,,Glovo,2019-10-13,2019-10-13 06:05:53,,Platos calientes
+600,5067315,Ensalada de tabuli (Porción large) ,100.0,ARS,Bue/tarabish/600/Tarabish/RESTAURANT/19521/34925,,Glovo,2019-10-13,2019-10-13 06:05:53,,Ensaladas
+600,5067464,Maamul de nuez,36.0,ARS,Bue/tarabish/600/Tarabish/RESTAURANT/19521/34925,,Glovo,2019-10-13,2019-10-13 06:05:53,,Postres 
+600,5067470,Maamul de coco,36.0,ARS,Bue/tarabish/600/Tarabish/RESTAURANT/19521/34925,,Glovo,2019-10-13,2019-10-13 06:05:53,,Postres 
+600,5067460,Baklawa ,80.0,ARS,Bue/tarabish/600/Tarabish/RESTAURANT/19521/34925,,Glovo,2019-10-13,2019-10-13 06:05:53,,Postres 
+600,12234927,Cerveza Peñón del Águila Kölsch en lata,160.0,ARS,Bue/tarabish/600/Tarabish/RESTAURANT/19521/34925,,Glovo,2019-10-13,2019-10-13 06:05:53,,Bebidas
+600,12234929,Cerveza Peñón del Águila octoberfest en lata,160.0,ARS,Bue/tarabish/600/Tarabish/RESTAURANT/19521/34925,,Glovo,2019-10-13,2019-10-13 06:05:53,,Bebidas
+600,12234933,Cerveza Peñón del Águila honigbier en lata,160.0,ARS,Bue/tarabish/600/Tarabish/RESTAURANT/19521/34925,,Glovo,2019-10-13,2019-10-13 06:05:53,,Bebidas
+600,12235618,Cerveza Peñón del Águila Schwarzbier negra en lata,160.0,ARS,Bue/tarabish/600/Tarabish/RESTAURANT/19521/34925,,Glovo,2019-10-13,2019-10-13 06:05:53,,Bebidas
+600,12235629,Cerveza Otro Mundo Beastie Ale 500 ml.,160.0,ARS,Bue/tarabish/600/Tarabish/RESTAURANT/19521/34925,,Glovo,2019-10-13,2019-10-13 06:05:53,,Bebidas
+600,12235631,Cerveza Otro Mundo Golden Ale de 500m ml.,160.0,ARS,Bue/tarabish/600/Tarabish/RESTAURANT/19521/34925,,Glovo,2019-10-13,2019-10-13 06:05:53,,Bebidas
+600,24254263,Refresco línea Coca Cola 350 ml.,80.0,ARS,Bue/tarabish/600/Tarabish/RESTAURANT/19521/34925,,Glovo,2019-10-13,2019-10-13 06:05:53,,Bebidas
+600,24254266,Refresco línea Schweppes 350 ml.,80.0,ARS,Bue/tarabish/600/Tarabish/RESTAURANT/19521/34925,,Glovo,2019-10-13,2019-10-13 06:05:53,,Bebidas
+600,24254268,Agua mineral 500 ml.,80.0,ARS,Bue/tarabish/600/Tarabish/RESTAURANT/19521/34925,,Glovo,2019-10-13,2019-10-13 06:05:53,,Bebidas
+600,24254272,Cerveza Otro Mundo Nut Brown Ale de 500 ml.,160.0,ARS,Bue/tarabish/600/Tarabish/RESTAURANT/19521/34925,,Glovo,2019-10-13,2019-10-13 06:05:53,,Bebidas
+600,24254299,Cerveza Otro Mundo Indian Pale Ale de 500 ml.,160.0,ARS,Bue/tarabish/600/Tarabish/RESTAURANT/19521/34925,,Glovo,2019-10-13,2019-10-13 06:05:53,,Bebidas
+600,24254311,Cerveza Corona rubia de 355 ml.,160.0,ARS,Bue/tarabish/600/Tarabish/RESTAURANT/19521/34925,,Glovo,2019-10-13,2019-10-13 06:05:53,,Bebidas
+600,24252683,Falafel Baalbak,200.0,ARS,Bue/tarabish/600/Tarabish/RESTAURANT/19521/34925,,Glovo,2019-10-13,2019-10-13 06:05:53,,Falafel
+600,24252735,Falafel Alrawshe,200.0,ARS,Bue/tarabish/600/Tarabish/RESTAURANT/19521/34925,,Glovo,2019-10-13,2019-10-13 06:05:53,,Falafel
+600,24252742,Falafel Biblos,220.0,ARS,Bue/tarabish/600/Tarabish/RESTAURANT/19521/34925,,Glovo,2019-10-13,2019-10-13 06:05:53,,Falafel
+600,24252753,Falafel Yeita,240.0,ARS,Bue/tarabish/600/Tarabish/RESTAURANT/19521/34925,,Glovo,2019-10-13,2019-10-13 06:05:53,,Falafel
